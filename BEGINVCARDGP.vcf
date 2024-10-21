@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Giacomo Parenti
+ORG:Citta' Metropolitana di Firenze
+TEL;TYPE=CELL:335 
+TEL;TYPE=WORK:055 2760464
+EMAIL:giacomo.parenti@cittametropolitana.fi.it
+ADR;TYPE=WORK:;;Via Camillo Cavour 11;Firenze;Toscana;50123;Italia
+END:VCARD

@@ -1,0 +1,178 @@
+/* Corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenitore del logo */
+.logo-container {
+    position: relative;
+    text-align: center;
+    margin-top: 40px; /* Spazio tra il logo e la parte superiore della pagina */
+}
+
+.logo-container .logo-wrapper {
+    width: 120px; /* Dimensione del cerchio */
+    height: 120px;
+    background-color: #fff; /* Sfondo bianco del cerchio */
+    border-radius: 50%; /* Rende il contenitore circolare */
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -60px; /* Fa sì che il cerchio sporga sul riquadro colorato */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Aggiunge ombra per un effetto tridimensionale */
+}
+
+.logo {
+    width: 80px; /* Dimensione del logo */
+    height: 80px;
+    border-radius: 50%; /* Rende il logo circolare */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra il logo all'interno del cerchio */
+}
+
+/* Riquadro in alto con nome, titolo e icone */
+.top-box {
+    background-color: #c30c26;
+    color: #fff;
+    padding: 50px 40px; /* Aumenta il padding per dare più spazio interno */
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25px; /* Arrotonda di più gli angoli */
+    position: relative;
+    z-index: 1;
+    margin-top: 40px; /* Spazio extra tra il logo e il riquadro */
+}
+
+.top-box h1 {
+    margin: 0;
+    font-size: 32px;
+    margin-bottom: 20px; /* Spazio aggiuntivo sotto il nome */
+}
+
+.top-box p {
+    margin: 20px 0; /* Spazio aggiuntivo tra la descrizione del lavoro e le icone */
+    font-size: 20px;
+}
+
+/* Icone nella top-box, disposte in orizzontale */
+.icon-links {
+    margin-top: 25px; /* Spazio aggiuntivo sopra le icone */
+}
+
+.icon {
+    display: inline-block;
+    margin: 0 15px; /* Spazio extra tra le icone */
+    color: #9C9c9C57; /* Colore delle icone */
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #f0f0f0;
+}
+
+/* Sezione dettagli in basso, con icone accanto al testo */
+.details {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Arrotonda leggermente anche i dettagli */
+}
+
+.details p {
+    font-size: 20px;
+    color: #333;
+    margin: 15px 0;
+    display: flex; /* Usa flexbox per il layout */
+    align-items: center; /* Allinea verticalmente le icone e il testo */
+}
+
+.details i {
+    margin-right: 10px; /* Spazio tra icona e testo */
+    color: #9C9c9C57; /* Colore delle icone nei dettagli */
+}
+
+.details a {
+    color: #c30c26;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.add-to-contact {        /* Pulsante "Aggiungi a Rubrica" */
+    text-align: center; /* Centra il pulsante */
+    margin: 30px 0; /* Spazio attorno al pulsante */
+}
+
+.btn-add-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c30c26; /* Colore del pulsante */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+.btn-add-contact:hover {
+    background-color: #c30c26; /* Colore più chiaro al passaggio del mouse */
+}
+
+/* Media query per schermi piccoli come smartphone */
+@media screen and (max-width: 600px) {
+    .top-box {
+        padding: 15px;
+        width: 90%;
+        border-radius: 20px; /* Arrotondamento proporzionale su mobile */
+    }
+
+    .top-box h1 {
+        font-size: 28px;
+    }
+
+    .top-box p {
+        font-size: 18px;
+    }
+
+    .icon-links {
+        margin-top: 15px;
+    }
+
+    .icon {
+        font-size: 24px;
+        margin: 0 10px;
+    }
+
+    .details {
+        padding: 15px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .details p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .logo-container .logo-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-bottom: -50px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
